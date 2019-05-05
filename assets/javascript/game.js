@@ -49,17 +49,14 @@ document.onkeyup = function (event) {
     userGuesses.textContent = ("Guesses so far: " + guesses.join(", "));
 
 
-    function reset() {
 
-        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-        guesses = [];
-        userGuessesLeft = 9;
-        userWins.textContent = ("Wins: " + wins);
-        userLosses.innerText = ("Losses: " + losses);
-    }
 
-    function myFunction() {
-        alert("it is working!");
-    }
-    window.onload = myFunction;
 };
+function reset() {
+
+    computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    guesses = [];
+    userGuessesLeft = 9;
+    userWins.textContent = ("Wins: " + wins);
+    userLosses.innerText = ("Losses: " + losses);
+}
